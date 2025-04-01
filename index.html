@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="page active">
+        <h1>Welcome to Math Challenge</h1>
+        <button id="start-btn" class="btn">Start Game</button>
+    </div>
+
+    <!-- Rules Page -->
+    <div id="rules-page" class="page">
+        <h1>Math Challenge</h1>
+        <div class="form-group">
+            <label for="player-name">Enter Your Name:</label>
+            <input type="text" id="player-name" placeholder="Your name">
+        </div>
+        <div class="rules">
+            <h2>Rules:</h2>
+            <ol>
+                <li>Each correct answer: +2 points</li>
+                <li>Each wrong answer: -1 point</li>
+                <li>Time limits decrease as you progress</li>
+            </ol>
+        </div>
+        <button id="begin-game-btn" class="btn">Start Game</button>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="page">
+        <div class="game-header">
+            <div id="timer">Time: 30s</div>
+            <div id="score">Score: 0</div>
+            <div id="question-count">Question: 1/20</div>
+        </div>
+        <div class="question-container">
+            <div id="question"></div>
+            <input type="number" id="answer" placeholder="Your answer">
+            <div class="buttons">
+                <button id="clear-btn" class="btn">Clear</button>
+                <button id="submit-btn" class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="page">
+        <h1>Game Over!</h1>
+        <div id="results-container">
+            <p id="player-result"></p>
+            <p id="final-score"></p>
+            <p id="performance-message"></p>
+        </div>
+        <button id="play-again-btn" class="btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
